@@ -4,6 +4,9 @@ import { Routes, Route  } from 'react-router-dom'
 import Otp from './Components/Otp.js'
 import SignIn from './Components/SignIn.js'
 
+import PortalMenu from './PortalMenu.js';
+import Dashboard from './Dashboard.js';
+
 
 function App() {
   return (
@@ -22,6 +25,13 @@ function App() {
         <Otp/>
       </div>
     }/>
+
+    <Route path='/dashboard' element={
+      <div>
+        <PortalMenu/>
+        <Dashboard/>
+      </div>
+    }></Route>
 </Routes>
       
     </div>

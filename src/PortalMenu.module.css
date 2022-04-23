@@ -1,0 +1,31 @@
+.PortalMenuCon{
+    padding: 20px;
+    display: inline-block;
+    width: 15vw;
+    vertical-align: top;
+}
+.Logo{
+    margin-bottom: 80px;
+}
+
+ .links{
+     text-decoration: none; 
+     margin-left: 20px;
+     width: 40px;
+ }
+  .links:focus, .links:active{
+    color: var(--yellow);
+ }
+ .styles{
+    
+     margin-bottom: 20px;
+     
+
+ }
+ .styles:hover{
+     width: 10px;
+     border-bottom: 1px solid var(--yellow);
+ }
+ .logout{
+     margin-top: 80px;
+ }
