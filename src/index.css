@@ -56,4 +56,12 @@ body {
 .style:focus{
   color: var(--yellow);
 }
+.nameT{
+  
+  width: 100%;
+  /* height: 10px; */
+  /* background: red; */
+  color: red;
+  
+}
 
