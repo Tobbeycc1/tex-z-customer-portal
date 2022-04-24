@@ -20,22 +20,25 @@ function Dashboard(props) {
     const myInputI = useRef()
     const change = useRef()
     const orderBtn =useRef()
-    const estimatedDuration = '1:50 pm'
-    const customerName = 'TOBBEY CHIME'
-    const notificationNumber = '5'
-    const minutesRemaining = '10 minutes'
-    const TMImage = ''
-    const TMName = 'Chime Tochukwu Celestine'
-    const TMNo = '892-91-8'
-    const TMPhoneNo = '0905387301 '
-    const CarModel = 'dd'
-    const PlateNo = '86153'
+    const minutesRemainingRef = useRef()
+    const estimatedDurationRef =useRef()
+    var estimatedDuration = '1:50 pm'
+    var customerName = 'TOBBEY CHIME'
+    var notificationNumber = '5'
+    var minutesRemaining = '10 minutes'
+    var TMImage = '' 
+    var TMName = 'Chime Tochukwu Celestine'
+    var TMNo = '892-91-8'
+    var TMPhoneNo = '0905387301 '
+    var CarModel = 'ee'
+    var PlateNo = '86153'
+    // var TMImage = driverImage
     
 
 function blank() {
     console.log('load');
     console.log(TMName);
-    if (PlateNo != '' && TMName !== '' && TMNo !== '' && TMPhoneNo !== '' && CarModel !== '' && TMImage !== '') {
+    if (PlateNo != '' && TMName !== '' && TMNo !== '' && TMPhoneNo !== '' && CarModel !== '' && TMImage !== '' ) {
         console.log('clicked');
         change.current.className = 'nameT'
         myInput.current.style.visibility = 'visible'
@@ -44,8 +47,8 @@ function blank() {
         myInputC.current.style.visibility = 'visible'
         myInputD.current.style.visibility = 'visible'
         orderBtn.current.style.display = 'none'
-
-  
+        estimatedDurationRef.current.style.visibility = 'visible'
+        minutesRemainingRef.current.className = 'minutesRemainingRef'
   
     }
     
@@ -58,7 +61,7 @@ function blank() {
             <div className={classes.deliveryTimeCon}>
 
             <div className={classes.yellowdash}></div>
-            <h3 className={classes.subhtitle}>You would receive your package at: <span className={classes.estimatedTime}>{estimatedDuration}</span></h3> 
+            <h3 className={classes.subhtitle}>You would receive your package at: <span className={classes.estimatedTime} ref={estimatedDurationRef}>{estimatedDuration}</span></h3> 
             </div>
 
 
@@ -78,7 +81,7 @@ function blank() {
             
             
         </div>
-        <p className={classes.minutesRemaining}>Arrives in the next: {minutesRemaining}</p>
+        <p className={classes.minutesRemaining} ref={minutesRemainingRef}>Arrives in the next: {minutesRemaining}</p>
         
         <div className={classes.mapAndPackageDetailsCon}>
                 <div className={classes.mapCon}>

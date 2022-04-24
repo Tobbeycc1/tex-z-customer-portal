@@ -65,3 +65,10 @@ body {
   
 }
 
+.minutesRemainingRef{
+ 
+  background: none;
+  color: white;
+  padding-left: 42px;
+}
+

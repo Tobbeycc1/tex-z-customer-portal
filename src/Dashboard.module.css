@@ -21,6 +21,7 @@
   .estimatedTime{
       color: var(--yellow);
       font-weight: bold;
+      visibility: hidden;
   }
 
   .sup{
@@ -73,7 +74,11 @@
     margin-right: auto;
   }
   .minutesRemaining{
-    padding-left: 42px;
+    width: 300px;
+    height: 30px;
+    background: #171716;
+    color: #171716;
+    margin-left: 42px;
   }
   .PackageDetailsCon{
     padding-top: 8vh;
