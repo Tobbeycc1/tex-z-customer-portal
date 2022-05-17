@@ -1,0 +1,30 @@
+.label{
+    font-size: 13px;
+}
+.input{
+    width: 421px;
+    height: 30px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 20px 0px 5px 0px;
+    outline: none;
+}
+.btnCon{
+    text-align: right;
+}
+.btn{
+    color: var(--black);
+    font-weight: 1000;
+    background: white;
+    border: none;
+    width: 87px;
+    height: 37px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: none;
+    color: white;
+    border: 2px solid var(--yellow);
+}

@@ -35,6 +35,8 @@ body {
   padding-bottom: 20px;
   font-weight: 1000;
   height: 10px;
+  word-spacing: 20px;
+  position: relative;
  
   
   
@@ -56,6 +58,11 @@ body {
 .style:focus{
   color: var(--yellow);
 }
+.style:hover{
+  color: var(--yellow);
+   
+}
+
 .nameT{
   
   width: 100%;
@@ -65,10 +72,5 @@ body {
   
 }
 
-.minutesRemainingRef{
- 
-  background: none;
-  color: white;
-  padding-left: 42px;
-}
+
 

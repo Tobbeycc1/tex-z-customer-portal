@@ -24,9 +24,11 @@
      
 
  }
+
  .styles:hover{
-     width: 10px;
-     border-bottom: 1px solid var(--yellow);
+     
+     border-bottom: 2px solid var(--yellow);
+     border-image: linear-gradient(45deg, #ffd700 0%, #000000 20%) 1
  }
  .logout{
      margin-top: 80px;

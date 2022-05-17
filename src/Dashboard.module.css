@@ -5,59 +5,7 @@
     
 
 }
-.yellowdash {
-    width: 32px;
-    height: 4px;
-    background: var(--yellow);
-    display: inline-block;
-  }
-  .subhtitle {
-     
-    display: inline-block;
-    margin: 0px 10px;
-    vertical-align: middle;
-    font-weight: bold;
-  }
-  .estimatedTime{
-      color: var(--yellow);
-      font-weight: bold;
-      visibility: hidden;
-  }
 
-  .sup{
-    font-size: 12px;
-    margin-left: 5px;
-    color: var(--yellow);
-  }
-  .deliveryTimeCon{
-    display: inline-block;
-    margin-right: auto;
-    
-  }
-  .conA{
-    width: 80vw;
-    display: flex;
-    
-  }
-  .customerDetailsCon{
-    display: inline-block;
-    text-align: right;
-    
-
-
-  }
-  .customerNameCon{
-    display: inline-block;
-    padding-bottom: 5px;
-    border-bottom: 2px solid var(--yellow);
-   
-    
-  }
-  .AVI{
-    vertical-align: middle;
-    border-radius: 100%;
-    margin-left: 15px;
-  }
   .mapAndPackageDetailsCon{
     display: flex;
     width: 80vw;
@@ -73,12 +21,10 @@
     vertical-align: middle;
     margin-right: auto;
   }
-  .minutesRemaining{
-    width: 300px;
-    height: 30px;
-    background: #171716;
-    color: #171716;
-    margin-left: 42px;
+  .thankYou{
+    background: none;
+    color: white;
+    padding-left: 42px;
   }
   .PackageDetailsCon{
     padding-top: 8vh;
@@ -224,14 +170,67 @@
     margin-right: 20px;
     vertical-align: bottom;
   }
+  .priceDetails{
+    width: 39.1vw;
+    background: var(--yellow);
+    height: 45px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+   
+  }
+  .priceDetailsSubCon{
+    display: flex;
+    align-content: center;
+    visibility: hidden;
+    
+  }
+  .deliveryFare{
+    margin-right: auto;
+    color: var(--black);
+    font-weight: 1000;
+  }
+  .packagePrice{
+    color: var(--black);
+    font-weight: 1000;
+  }
+  .durationDetails{
+    width: 39.1vw;
+    border: 2px solid white;
+    height: 45px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .declineTMCon{
+    text-align: center;
+    cursor: pointer;
+  }
+  .declineTM{
+    text-decoration: underline;
+    
+  }
+  .deliveryEstimatedTimeCon{
+    
+    text-align: center;
+    background: #171716;
+  }
+  .deliveryEstimatedTime{
+    color:  var(--yellow);
+    
+  }
+  .youWould{
+    visibility: hidden;
+  }
   .TMImage{
     /* background: #171716; */
     width: 100%;
     height: 100%;
   }
-  .assignedTMDetails{
+  .assignedTMDetails, .paymentDetailsCon{
     display: inline-block;
   }
+  
   .assignedTMConA{
     width: 25vw;
    

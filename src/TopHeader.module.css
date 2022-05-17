@@ -1,0 +1,60 @@
+
+.yellowdash {
+    width: 32px;
+    height: 4px;
+    background: var(--yellow);
+    display: inline-block;
+  }
+  .subhtitle {
+     
+    display: inline-block;
+    margin: 0px 10px;
+    vertical-align: middle;
+    font-weight: bold;
+  }
+  .clientName{
+      color: var(--yellow);
+      font-weight: bold;
+      margin-left: 10px;
+      text-transform: uppercase;
+  }
+
+  .sup{
+    font-size: 12px;
+    margin-left: 5px;
+    color: var(--yellow);
+  }
+  .deliveryTimeCon{
+    display: inline-block;
+    margin-right: auto;
+    
+  }
+  .conA{
+    width: 80vw;
+    display: flex;
+    
+  }
+  .customerDetailsCon{
+    display: inline-block;
+    text-align: right;
+    
+
+
+  }
+  .customerNameCon{
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--yellow);
+   
+    
+  }
+  .AVI{
+    vertical-align: middle;
+    border-radius: 100%;
+    margin-left: 15px;
+  }
+  .thankYou{
+    background: none;
+    color: white;
+    padding-left: 42px;
+  }

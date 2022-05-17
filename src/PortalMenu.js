@@ -11,14 +11,15 @@ function PortalMenu(props) {
         
                 <div className={classes.styles}>
                     
-                    <span ><Link  to={'/dashboard'} className={"material-symbols-outlined style"}>dashboard DASHBOARD</Link></span>
-                 <br/>
+                    <span ><Link  to={'/dashboard'} className={"fa-solid fa-gear style"}> dashboard </Link></span>
                 
+                 <br/>
+                   
                 </div>
 
                 <div className={classes.styles}>
                     
-                    <span ><Link  to={'/dashboard'} className={"material-symbols-outlined style"}>query_stats LIVE-TRACK</Link></span>
+                    <span ><Link  to={'/dashboard'} className={"fa-solid fa-arrow-trend-up style"}> LIVE-TRACK</Link></span>
                  <br/>
                 
                 </div>
@@ -27,7 +28,7 @@ function PortalMenu(props) {
 
                 <div className={classes.styles}>
                     
-                    <span ><Link  to={'/dashboard'} className={"material-symbols-outlined style"}>settings SETTINGS</Link></span>
+                    <span ><Link  to={'/changename'} className={"fa-solid fa-gear style"}> settings </Link></span>
                  <br/>
 
                 

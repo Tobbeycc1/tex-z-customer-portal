@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import classes from './Dashboard.module.css'
-import AVI from '../src/Images/avi.jpg'
+// import AVI from '../src/Images/avi.jpg'
 import ellipse from '../src/Images/Ellipse 16.png'
 import driverImage from '../src/Images/passport.png'
 import { useRef } from "react";
 import './index.css'
+import TopHeader from './TopHeader';
 
 function Dashboard(props) {
 
@@ -20,19 +21,22 @@ function Dashboard(props) {
     const myInputI = useRef()
     const change = useRef()
     const orderBtn =useRef()
-    const minutesRemainingRef = useRef()
-    const estimatedDurationRef =useRef()
-    var estimatedDuration = '1:50 pm'
-    var customerName = 'TOBBEY CHIME'
-    var notificationNumber = '5'
-    var minutesRemaining = '10 minutes'
+    const priceDetailsRef =useRef()
+    const deliveryEstimatedTimeConRef =useRef()
+    const deliveryEstimatedTimeRef =useRef()
+    
+    
+   
     var TMImage = '' 
     var TMName = 'Chime Tochukwu Celestine'
     var TMNo = '892-91-8'
     var TMPhoneNo = '0905387301 '
     var CarModel = 'ee'
     var PlateNo = '86153'
-    // var TMImage = driverImage
+    var packagePrice = 'N 2,500'
+    var deliveryEstimatedTime = '1:30pm'
+    var clientName = 'Tobbey'
+    var TMImage = driverImage
     
 
 function blank() {
@@ -47,9 +51,9 @@ function blank() {
         myInputC.current.style.visibility = 'visible'
         myInputD.current.style.visibility = 'visible'
         orderBtn.current.style.display = 'none'
-        estimatedDurationRef.current.style.visibility = 'visible'
-        minutesRemainingRef.current.className = 'minutesRemainingRef'
-  
+        priceDetailsRef.current.style.visibility = 'visible'
+        deliveryEstimatedTimeConRef.current.style.background = 'none'
+        deliveryEstimatedTimeRef.current.style.visibility = 'visible'
     }
     
  }
@@ -57,31 +61,9 @@ function blank() {
    
     return(
         <div className={classes.portalCon}>
-        <div className={classes.conA}>
-            <div className={classes.deliveryTimeCon}>
+            <TopHeader title={'Welcome Back'} clientNameProps={clientName} subT={'Thank you for coming back'}/>
+        
 
-            <div className={classes.yellowdash}></div>
-            <h3 className={classes.subhtitle}>You would receive your package at: <span className={classes.estimatedTime} ref={estimatedDurationRef}>{estimatedDuration}</span></h3> 
-            </div>
-
-
-            <div className={classes.customerDetailsCon}>
-                <div className={classes.customerNameCon}> <p className={classes.customerName}>{customerName}</p></div>
-           
-
-            <Link to={'/notifications'} class="fa-solid fa-bell" 
-            style={{textDecoration: 'none', display: 'inline-block', marginLeft: '35px'}}
-            ><sup className={classes.sup}>{notificationNumber}</sup></Link>
-            <img src={AVI} alt='AVI' className={classes.AVI}/>
-
-            </div>
-           
-
-            
-            
-            
-        </div>
-        <p className={classes.minutesRemaining} ref={minutesRemainingRef}>Arrives in the next: {minutesRemaining}</p>
         
         <div className={classes.mapAndPackageDetailsCon}>
                 <div className={classes.mapCon}>
@@ -185,20 +167,33 @@ function blank() {
             <p className={classes.name} ref={myInputC}>Car model:<span ref={myInputH} className={classes.actualname}>{CarModel}</span></p>
             <p className={classes.name} ref={myInputD}>Plate no.:<span ref={myInputI} className={classes.actualname}>{PlateNo}</span></p>
            </div>
-
-           {/* <div className={classes.actualnameCon} >
-           <p className={classes.actualname} ref={myInput}>{TMName}</p>
-            <p className={classes.actualname} ref={myInput}>{TMNo}</p>
-            <p className={classes.actualname} ref={myInput}>{TMPhoneNo}</p>
-            <p className={classes.actualname} ref={myInput}>{CarModel}</p>
-            <p className={classes.actualname} ref={myInput}>{PlateNo}</p>
-           </div> */}
-           
-
-                {/* <p className={classes.TMName}></p> */}
-
             </div>
            
+            </div>
+{/* Payment details */}
+            <div className={classes.paymentDetailsCon}>
+            <div className={classes.priceDetails}>
+            <div ref={priceDetailsRef} className={classes.priceDetailsSubCon}>
+            <p className={classes.deliveryFare}>Delivery Fare</p>
+            <p className={classes.packagePrice}>{packagePrice}</p>
+            </div>
+            
+
+            </div>
+
+            <div className={classes.durationDetails}>
+            <div ref={deliveryEstimatedTimeConRef} className={classes.deliveryEstimatedTimeCon}>
+            <h3 className={classes.youWould} ref={deliveryEstimatedTimeRef}>You would recieve your package by: <span className={classes.deliveryEstimatedTime}>{deliveryEstimatedTime}</span></h3>
+            </div>
+                
+            </div>
+
+            <div className={classes.declineTMCon}>
+            <p className={classes.declineTM}>Decline TM</p> 
+            </div>
+
+            
+
             </div>
             
            
