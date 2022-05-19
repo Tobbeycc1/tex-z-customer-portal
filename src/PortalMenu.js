@@ -11,7 +11,7 @@ function PortalMenu(props) {
         
                 <div className={classes.styles}>
                     
-                    <span ><Link  to={'/dashboard'} className={"fa-solid fa-gear style"}> dashboard </Link></span>
+                    <span ><Link  to={'/dashboard'} className={"fa-solid fa-table-cells-large style"}> dashboard </Link></span>
                 
                  <br/>
                    
@@ -34,8 +34,17 @@ function PortalMenu(props) {
                 
                 
                 </div>
+
+                <div className={classes.styles}>
+                    
+                    <span ><Link  to={'/changename'} className={"fa-solid fa-clock-rotate-left style"}> History </Link></span>
+                 <br/>
+
+                
+                
+                </div>
                
-                <Link  to={'/'} style={{marginTop:'180px'}} className={"material-symbols-outlined style"}>logout LOG-OUT</Link>
+                <Link  to={'/'} style={{marginTop:'180px'}} className={"fa-solid fa-arrow-right-from-bracket style"}> LOG-OUT</Link>
                
                 
             

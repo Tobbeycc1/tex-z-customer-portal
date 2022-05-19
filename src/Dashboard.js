@@ -36,7 +36,7 @@ function Dashboard(props) {
     var packagePrice = 'N 2,500'
     var deliveryEstimatedTime = '1:30pm'
     var clientName = 'Tobbey'
-    var TMImage = driverImage
+    // var TMImage = driverImage
     
 
 function blank() {
